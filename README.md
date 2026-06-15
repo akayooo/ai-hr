@@ -1,144 +1,144 @@
-# 🐳 Платформа цифрового рекрутинга
+# 🐳 Digital recruitment platform
 
-⚠️ **ВНИМАНИЕ: ДЕМО-РЕЖИМ**
+⚠️ **NOTE: DEMO MODE**
 
-    transcription-fireworks использует api, но есть возможность развернуть локально, папка: "stt-wispher-large-server" 
+    transcription-fireworks uses an API, but it can also be deployed locally, folder: "stt-wispher-large-server"
 
-    Данное интервью искусственно сокращено для быстрого тестирования функционала системы.
-    В демо-версии используется ограниченный набор вопросов для демонстрации возможностей алгоритма.
+    This interview is artificially shortened for quick testing of the system's functionality.
+    The demo version uses a limited set of questions to demonstrate the algorithm's capabilities.
 
-    Полная продолжительность интервью и количество вопросов настраиваются в коде системы
-    в зависимости от требований конкретной вакансии и уровня должности.
+    The full interview duration and number of questions are configured in the system's code
+    depending on the requirements of the specific vacancy and the seniority of the position.
 
-    В рабочей версии интервью может включать:
-    • 15-30 технических вопросов
-    • Адаптивную сложность на основе ответов кандидата
-    • Дополнительные блоки по soft skills и кейсам
-    • Общую продолжительность 30-60 минут
+    In the production version, an interview may include:
+    • 15–30 technical questions
+    • Adaptive difficulty based on the candidate's answers
+    • Additional blocks on soft skills and cases
+    • A total duration of 30–60 minutes
 
-Проект можно развернуть локально с помощью Docker.
+The project can be deployed locally using Docker.
 
-## Описание проекта
+## Project overview
 
-**MoreTech.VTB** — HR-платформа для цифрового рекрутинга. Система объединяет в себе интеллектуальную систему технических интервью на базе ИИ, голосовой анализ, синтез речи и удобный веб-интерфейс для кандидатов и компаний.
+**MoreTech.VTB** — an HR platform for digital recruitment. The system combines an AI-powered intelligent technical interview system, voice analysis, speech synthesis, and a convenient web interface for candidates and companies.
 
-## Ключевые возможности
+## Key features
 
-### **Для кандидатов:**
+### **For candidates:**
 
-#### Страница профиля
+#### Profile page
 
-    Управление профилем с возможностью изменять информацию пользователя, резюме и отслеживанием текущих заявок
-
-
-#### Поиск вакансий
-
-    Умный поиск с фильтрацией и цветовым кодированием уровней (Junior/Middle/Senior)
-
-#### Поиск компаний
-
-    Каталог компаний с детальной информацией и профилями работодателей
+    Profile management with the ability to edit user information and resume, and to track current applications
 
 
-#### Проверка резюме
+#### Job search
 
-    Анализ резюме с возможностью просмотра и редактирования через ИИ
+    Smart search with filtering and color coding of levels (Junior/Middle/Senior)
 
+#### Company search
 
-#### Интерактивные интервью
-
-    Голосовые интервью с real-time анализом речи и ИИ-обратной связью
-
-
-#### Трекинг заявок
-
-    Мониторинг статуса заявок с удобными фильтрами и уведомлениями
-
-### **Для HR/Компаний:**
-
-#### Управление кандидатами
-
-    Полный анализ кандидатов с просмотром резюме, результатов интервью и голосового анализа
+    A catalog of companies with detailed information and employer profiles
 
 
-#### Результаты интервью
+#### Resume check
 
-    Детальная аналитика с ИИ-рекомендациями и оценками по критериям
-
-
-#### Управление заявками
-
-    Изменение статусов заявок с уведомлениями кандидатов
+    Resume analysis with the ability to view and edit it via AI
 
 
-#### Создание вакансий
+#### Interactive interviews
 
-    Размещение вакансий и управление требованиями к кандидатам
-
-#### Интеграция с HH.ru
-
-    Автоматическая синхронизация с HeadHunter:
-    - Импорт откликов кандидатов
-    - Синхронизация вакансий
-    - Автоматическое создание интервью для новых откликов
-    - Управление переговорами через HH.ru API
-
-#### Аналитические дэшборды компании
-
-    Комплексная аналитика по найму:
-    -Общая статистика: Количество кандидатов, завершенных интервью, нанятых сотрудников
-    - Распределение по статусам: Визуализация воронки найма (активные → завершенные → тестовые → финалисты → офферы)
-    - Распределение по оценкам: Категоризация кандидатов по уровням (отлично/хорошо/средне/слабо/плохо)
-    - Анализ голосовых характеристик: Средние показатели по стрессоустойчивости, коммуникации, энергии
-    - Интерактивные графики: Детальная аналитика по вакансиям с метриками эффективности
-    - Экспорт отчетов: Скачивание детальных отчетов по вакансиям в различных форматах
-    - KPI метрики: Время найма, конверсия по этапам, качество кандидатов
-
-#### Аналитический дэшборд кандидата
-
-    Персональная аналитика для кандидатов:
-    - Общая оценка: Комплексная оценка по резюме и интервью
-    - Детализация по навыкам: Радиальные прогресс-бары по техническим и soft skills
-    - Анализ по темам: Графики и таблицы с оценками по различным темам интервью
-    - Голосовой анализ: Оценки стрессоустойчивости, коммуникации, энергии
-    - Статистика заявок: Количество поданных заявок, офферов, отклонений
-    - Рекомендации ИИ: Персональные советы по улучшению профиля
+    Voice interviews with real-time speech analysis and AI feedback
 
 
-#### Профиль компании
+#### Application tracking
 
-    Корпоративная страница в стиле современных HR-платформ с полной информацией о компании
+    Monitoring application statuses with convenient filters and notifications
+
+### **For HR/Companies:**
+
+#### Candidate management
+
+    Full candidate analysis with viewing of resume, interview results, and voice analysis
 
 
-## Структура приложения
+#### Interview results
 
-### Интерфейсы для кандидатов
+    Detailed analytics with AI recommendations and per-criterion scores
 
-| Страница                  | Путь            | Описание                                                                |
+
+#### Application management
+
+    Changing application statuses with candidate notifications
+
+
+#### Vacancy creation
+
+    Posting vacancies and managing candidate requirements
+
+#### HH.ru integration
+
+    Automatic synchronization with HeadHunter:
+    - Importing candidate responses
+    - Synchronizing vacancies
+    - Automatically creating interviews for new responses
+    - Managing negotiations via the HH.ru API
+
+#### Company analytics dashboards
+
+    Comprehensive hiring analytics:
+    - General statistics: Number of candidates, completed interviews, hired employees
+    - Status distribution: Visualization of the hiring funnel (active → completed → test task → finalists → offers)
+    - Score distribution: Categorization of candidates by level (excellent/good/average/weak/poor)
+    - Voice characteristics analysis: Average metrics for stress resistance, communication, energy
+    - Interactive charts: Detailed per-vacancy analytics with efficiency metrics
+    - Report export: Downloading detailed per-vacancy reports in various formats
+    - KPI metrics: Time to hire, stage-by-stage conversion, candidate quality
+
+#### Candidate analytics dashboard
+
+    Personal analytics for candidates:
+    - Overall score: A comprehensive score based on resume and interview
+    - Skill breakdown: Radial progress bars for technical and soft skills
+    - Topic analysis: Charts and tables with scores across various interview topics
+    - Voice analysis: Scores for stress resistance, communication, energy
+    - Application statistics: Number of applications submitted, offers, rejections
+    - AI recommendations: Personal tips for improving the profile
+
+
+#### Company profile
+
+    A corporate page in the style of modern HR platforms with full information about the company
+
+
+## Application structure
+
+### Interfaces for candidates
+
+| Page                  | Path            | Description                                                                |
 | --------------------------------- | ------------------- | ------------------------------------------------------------------------------- |
-| **Главная**          | `/`               | Главное меню                                                         |
-| **Все вакансии** | `/vacancies-list` | Полный каталог с переключением на компании |
-| **Профиль**          | `/profile`        | Редактирование данных и управление резюме  |
-| **Интервью**        | `/interview`      | Голосовые интервью с ИИ-анализом                    |
-| **Мои заявки**     | `/applications`   | Трекинг статусов с фильтрами                           |
+| **Home**          | `/`               | Main menu                                                         |
+| **All vacancies** | `/vacancies-list` | Full catalog with switching to companies |
+| **Profile**          | `/profile`        | Editing data and managing the resume  |
+| **Interview**        | `/interview`      | Voice interviews with AI analysis                    |
+| **My applications**     | `/applications`   | Status tracking with filters                           |
 
-### Панели для HR/Компаний
+### Panels for HR/Companies
 
-| Страница                            | Путь               | Описание                                                             |
+| Page                            | Path               | Description                                                             |
 | ------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------- |
-| **Панель управления** | `/company-dashboard` | Статистика и быстрые действия                      |
-| **Кандидаты**                | `/candidates`        | Анализ кандидатов и результатов интервью |
-| **Настройки**                | `/company-profile`   | Профиль компании в стиле HH.ru                          |
+| **Dashboard** | `/company-dashboard` | Statistics and quick actions                      |
+| **Candidates**                | `/candidates`        | Analysis of candidates and interview results |
+| **Settings**                | `/company-profile`   | Company profile in the HH.ru style                          |
 
 ---
 
-## База данных MongoDB
+## MongoDB database
 
-> **База данных**: `aihr_database`
-> **Драйвер**: PyMongo
-> **Всего коллекций**: 8
+> **Database**: `aihr_database`
+> **Driver**: PyMongo
+> **Total collections**: 8
 
-## Схема БД
+## DB schema
 
 ```mermaid
 erDiagram
@@ -270,20 +270,20 @@ erDiagram
     }
 ```
 
-## AI-HR Service (Порт 8002)
+## AI-HR Service (Port 8002)
 
-### Ключевые возможности
+### Key features
 
-- **Адаптивное интервьюирование** — система подстраивается под ответы кандидата
-- **Детальная оценка** — 6-критериальная система оценки с весовыми коэффициентами
-- **Умное управление** — автоматическое принятие решений о продолжении/пропуске тем
-- **Подробные отчеты** — структурированные отчеты с рекомендациями по найму
-- **REST API** — полная интеграция с внешними HR-системами
-- **Job Matching** — оценка соответствия резюме требованиям вакансии
-- **Голосовой анализ** — WebSocket-сервис для анализа речи и soft-skills
-- **Надежность** — обработка ошибок и fallback-механизмы
+- **Adaptive interviewing** — the system adapts to the candidate's answers
+- **Detailed scoring** — a 6-criteria scoring system with weighting coefficients
+- **Smart control** — automatic decisions about continuing/skipping topics
+- **Detailed reports** — structured reports with hiring recommendations
+- **REST API** — full integration with external HR systems
+- **Job Matching** — assessing how well a resume matches the vacancy requirements
+- **Voice analysis** — a WebSocket service for analyzing speech and soft skills
+- **Reliability** — error handling and fallback mechanisms
 
-## Архитектура системы
+## System architecture
 
 ```mermaid
 graph TB
@@ -345,69 +345,69 @@ graph TB
     V --> U
 ```
 
-## Подробное руководство
+## Detailed guide
 
-### Основные компоненты
+### Main components
 
-#### 1. **Агентная система интервью** (`ml_system/interview_system.py`)
+#### 1. **Agent-based interview system** (`ml_system/interview_system.py`)
 
-Центральный компонент, управляющий всем процессом интервью:
+The central component that manages the entire interview process:
 
-- **6 специализированных агентов** для разных задач
-- **Адаптивное управление** на основе ответов кандидата
-- **Строгие лимиты** для предотвращения зацикливания
-- **Детальная аналитика** с агрегацией данных
+- **6 specialized agents** for different tasks
+- **Adaptive control** based on the candidate's answers
+- **Strict limits** to prevent looping
+- **Detailed analytics** with data aggregation
 
-#### 2. **RAG-система** (`ml_system/retrieva.py`)
+#### 2. **RAG system** (`ml_system/retrieva.py`)
 
-Система поиска и извлечения релевантных вопросов:
+A system for searching and retrieving relevant questions:
 
-- **ChromaDB** для векторного поиска
-- **HuggingFace Embeddings** для семантического понимания
-- **База знаний** с 99+ структурированными вопросами
-- **Вариативность** по теме и формату вопроса (без привязки к уровням)
+- **ChromaDB** for vector search
+- **HuggingFace Embeddings** for semantic understanding
+- **Knowledge base** with 99+ structured questions
+- **Variety** by topic and question format (not tied to levels)
 
 #### 3. **Job Matching** (`ml_system/job_matching.py`)
 
-Оценка соответствия резюме требованиям вакансии:
+Assessing how well a resume matches the vacancy requirements:
 
-- **Гибкая система весов** для разных критериев
-- **Автоматическое извлечение** данных из резюме
-- **Штрафы** за недостаток/избыток опыта
-- **Детальная разбивка** по критериям
+- **Flexible weighting system** for different criteria
+- **Automatic extraction** of data from the resume
+- **Penalties** for lack/excess of experience
+- **Detailed breakdown** by criteria
 
 #### 4. **REST API** (`api.py`)
 
-Полнофункциональный API для интеграции:
+A full-featured API for integration:
 
-- **FastAPI** с автоматической документацией
-- **Pydantic** для валидации данных
-- **Асинхронная обработка** запросов
-- **Обработка ошибок** и fallback-механизмы
+- **FastAPI** with automatic documentation
+- **Pydantic** for data validation
+- **Asynchronous** request processing
+- **Error handling** and fallback mechanisms
 
-#### 5. **Голосовой анализ (WebSocket)** (`ml_system/voice_analyser.py`)
+#### 5. **Voice analysis (WebSocket)** (`ml_system/voice_analyser.py`)
 
-Инновационная система анализа речи в реальном времени:
+An innovative real-time speech analysis system:
 
-- **WebSocket endpoint** `/ws/voice` для потоковой обработки аудио
-- **Whisper транскрипция** — точное распознавание речи на русском языке
-- **Акустический анализ** — извлечение признаков с помощью librosa
-- **Soft-skills детекция** — автоматическое определение коммуникативных навыков
-- **Real-time обработка** — анализ аудио чанков в режиме реального времени
+- **WebSocket endpoint** `/ws/voice` for streaming audio processing
+- **Whisper transcription** — accurate speech recognition in Russian
+- **Acoustic analysis** — feature extraction using librosa
+- **Soft-skill detection** — automatic detection of communication skills
+- **Real-time processing** — analysis of audio chunks in real time
 
-### Конфигурация системы
+### System configuration
 
-#### Лимиты интервью
+#### Interview limits
 
-Лимиты задаются параметрами конструктора `InterviewSystem` и логикой контроллера:
+Limits are set by the `InterviewSystem` constructor parameters and the controller logic:
 
-- `max_total_questions` — общий лимит вопросов (по умолчанию ~7–30 в зависимости от конфигурации)
-- `max_questions_per_topic` — лимит вопросов на тему
-- Контроллер ограничивает число уточняющих вопросов и подсказок (см. класс `AdaptiveInterviewControllerAgent`)
+- `max_total_questions` — the overall question limit (default ~7–30 depending on the configuration)
+- `max_questions_per_topic` — the question limit per topic
+- The controller limits the number of follow-up questions and hints (see the `AdaptiveInterviewControllerAgent` class)
 
-#### Критерии оценки
+#### Scoring criteria
 
-Модель возвращает строгий JSON с ключами (0..10), далее считается взвешенная итоговая оценка:
+The model returns strict JSON with keys (0..10), after which a weighted final score is computed:
 
 ```json
 {
@@ -425,35 +425,35 @@ graph TB
 }
 ```
 
-Весовые коэффициенты внутри системы по умолчанию распределены между техническими и коммуникативными аспектами (см. реализацию `_answer_evaluator`).
+By default, the weighting coefficients inside the system are distributed between technical and communication aspects (see the `_answer_evaluator` implementation).
 
-#### Пороги принятия решений
+#### Decision thresholds
 
-По умолчанию финальная рекомендация формируется в отчетах исходя из средней оценки и выявленных рисков. Жесткая привязка к уровню кандидата отсутствует.
+By default, the final recommendation is formed in the reports based on the average score and the identified risks. There is no hard binding to the candidate's level.
 
-## API Документация
+## API documentation
 
-### Эндпоинты
+### Endpoints
 
-#### 1. Создание интервью
+#### 1. Creating an interview
 
 ```http
 POST /interviews
 Content-Type: application/json
 
 {
-  "resume": "Опыт с Python/ML, проекты по классификации и регрессии...",
-  "job_description": "Требуются навыки Python, ML-библиотеки, работа с данными"
+  "resume": "Experience with Python/ML, projects on classification and regression...",
+  "job_description": "Python skills required, ML libraries, working with data"
 }
 ```
 
-**Ответ:**
+**Response:**
 
 ```json
 {
   "interview_id": "b77aac53-b263-4f0c-9f27-6aa4aa2cd30e",
   "status": "waiting_for_answer",
-  "current_question": "Опишите наиболее значимый проект из вашего резюме: цель, вклад, результат.",
+  "current_question": "Describe the most significant project from your resume: the goal, your contribution, the result.",
   "question_source": "RAG/Fallback",
   "current_topic": "Resume Discussion",
   "progress": {
@@ -464,7 +464,7 @@ Content-Type: application/json
 }
 ```
 
-#### 2. Отправка ответа
+#### 2. Submitting an answer
 
 ```http
 POST /interviews/{interview_id}/answer
@@ -472,81 +472,81 @@ Content-Type: application/json
 
 {
   "interview_id": "b77aac53-b263-4f0c-9f27-6aa4aa2cd30e",
-  "answer": "Работал над проектом классификации отзывов; внедрили пайплайн, AUC=0.89"
+  "answer": "I worked on a review classification project; we deployed a pipeline, AUC=0.89"
 }
 ```
 
-#### 3. Получение статуса
+#### 3. Getting the status
 
 ```http
 GET /interviews/{interview_id}/status
 ```
 
-#### 4. Оценка резюме
+#### 4. Resume scoring
 
 ```http
 POST /resume-match
 Content-Type: application/json
 
 {
-  "resume": "Python разработчик с опытом ML...",
+  "resume": "Python developer with ML experience...",
   "required_skills": ["Python", "scikit-learn", "pandas"],
   "optional_skills": ["tensorflow", "SQL", "Docker"],
   "min_experience": 2.0,
   "max_experience": 5.0,
-  "education_required": "высшее"
+  "education_required": "higher education"
 }
 ```
 
-#### 5. Голосовой анализ (WebSocket)
+#### 5. Voice analysis (WebSocket)
 
 ```javascript
-// Подключение к WebSocket
+// Connecting to the WebSocket
 const ws = new WebSocket('ws://localhost:8000/ws/voice');
 
-// Отправка аудио чанка
+// Sending an audio chunk
 ws.send(JSON.stringify({
   "audio_chunk": "base64_encoded_audio_data",
   "chunk_id": 1,
   "is_final": false
 }));
 
-// Получение результата
+// Receiving the result
 ws.onmessage = function(event) {
   const result = JSON.parse(event.data);
-  console.log('Транскрипт:', result.transcript);
+  console.log('Transcript:', result.transcript);
   console.log('Soft-skills:', result.soft_skills_tags);
 };
 ```
 
-### Автоматическая документация
+### Automatic documentation
 
-После запуска сервера доступна интерактивная документация:
+After the server starts, interactive documentation is available:
 
 - **Swagger UI:** http://localhost:8000/docs
 - **ReDoc:** http://localhost:8000/redoc
 
-## Примеры использования
+## Usage examples
 
-### Пример 1: Базовое интервью
+### Example 1: Basic interview
 
 ```python
 from ml_system.interview_system import InterviewSystem
 
-# Инициализация
+# Initialization
 system = InterviewSystem(api_key="your_api_key")
 system.load_knowledge("data/ml_interview_bank_ru.json")
 
-# Запуск интервью
+# Running the interview
 resume = """
-Опытный Python разработчик с 3 годами опыта в машинном обучении.
-Работал с библиотеками scikit-learn, pandas, numpy, tensorflow.
-Имеет опыт создания ML моделей для классификации и регрессии.
+Experienced Python developer with 3 years of experience in machine learning.
+Worked with the scikit-learn, pandas, numpy, tensorflow libraries.
+Has experience building ML models for classification and regression.
 """
 
 job_description = """
-Ищем Middle ML разработчика для работы с NLP и Computer Vision проектами.
-Требования: Python, ML библиотеки, опыт с данными, знание SQL.
+Looking for a Middle ML developer to work on NLP and Computer Vision projects.
+Requirements: Python, ML libraries, experience with data, knowledge of SQL.
 """
 
 final_state = system.run_interview(resume, job_description)
@@ -554,23 +554,23 @@ report = system.get_report(final_state)
 print(report)
 ```
 
-### Пример 2: Использование API
+### Example 2: Using the API
 
 ```python
 import requests
 
-# Создание интервью
+# Creating an interview
 response = requests.post("http://localhost:8000/interviews", json={
-    "resume": "Опыт ML, Python, pandas, sklearn",
-    "job_description": "Проекты с NLP/CV, обработка данных, SQL"
+    "resume": "ML experience, Python, pandas, sklearn",
+    "job_description": "Projects with NLP/CV, data processing, SQL"
 })
 
 interview_data = response.json()
 interview_id = interview_data["interview_id"]
 
-# Отправка ответов
+# Submitting answers
 while interview_data["status"] != "completed":
-    answer = input(f"Вопрос: {interview_data['current_question']}\nВаш ответ: ")
+    answer = input(f"Question: {interview_data['current_question']}\nYour answer: ")
   
     response = requests.post(
         f"http://localhost:8000/interviews/{interview_id}/answer",
@@ -579,70 +579,70 @@ while interview_data["status"] != "completed":
   
     interview_data = response.json()
 
-print(f"Отчет: {interview_data['report']}")
+print(f"Report: {interview_data['report']}")
 ```
 
-### Пример 3: Job Matching
+### Example 3: Job Matching
 
 ```python
 from ml_system.job_matching import FlexibleResumeMatcher
 
-# Создание матчера
+# Creating the matcher
 matcher = FlexibleResumeMatcher(
     required_skills=["Python", "scikit-learn", "pandas"],
     optional_skills=["tensorflow", "SQL", "Docker"],
     min_experience=2.0,
     max_experience=5.0,
-    education_required="высшее"
+    education_required="higher education"
 )
 
-# Оценка резюме
+# Scoring the resume
 result = matcher.evaluate(resume_text)
-print(f"Соответствие: {result['total_score_percent']}%")
-print(f"Детали: {result['details']}")
+print(f"Match: {result['total_score_percent']}%")
+print(f"Details: {result['details']}")
 ```
 
-## Мониторинг и отладка
+## Monitoring and debugging
 
-### Логирование
+### Logging
 
-Система ведет подробные логи всех операций:
+The system keeps detailed logs of all operations:
 
 ```python
-# Включение детального логирования
+# Enabling detailed logging
 import logging
 logging.basicConfig(level=logging.DEBUG)
 
-# Логи сохраняются в папке logs/
-# Формат: interview_api_YYYYMMDD.log
+# Logs are saved in the logs/ folder
+# Format: interview_api_YYYYMMDD.log
 ```
 
-### Метрики в реальном времени
+### Real-time metrics
 
 ```python
-# Счетчики отображаются в консоли
-📊 Вопросов задано: 3/30
-📊 Текущая тема: 0/8
-🔍 Уточняющих вопросов: 1/3
-💡 Подсказок дано: 0/2
+# Counters are displayed in the console
+📊 Questions asked: 3/30
+📊 Current topic: 0/8
+🔍 Follow-up questions: 1/3
+💡 Hints given: 0/2
 ```
 
-### Отладка агентов
+### Agent debugging
 
 ```python
-# Включение отладочного режима
+# Enabling debug mode
 system = InterviewSystem(api_key="your_key", debug=True)
 
-# Детальная информация о решениях агентов
---- Агент: Адаптивный контроллер интервью ---
-📊 Последние оценки: [75, 82, 68]
-📉 Плохие подряд: 0, Хорошие подряд: 2, Средние подряд: 1
-🎯 Решение: increase_difficulty
+# Detailed information about the agents' decisions
+--- Agent: Adaptive interview controller ---
+📊 Latest scores: [75, 82, 68]
+📉 Poor in a row: 0, Good in a row: 2, Average in a row: 1
+🎯 Decision: increase_difficulty
 ```
 
-## Разработка и расширение
+## Development and extension
 
-### Добавление новых агентов
+### Adding new agents
 
 ```python
 class CustomAgent:
@@ -650,27 +650,27 @@ class CustomAgent:
         self.llm = llm
   
     def execute(self, state: Dict) -> Dict:
-        # Логика агента
+        # Agent logic
         return {"custom_field": "value"}
 
-# Интеграция в систему
+# Integration into the system
 system.add_agent("custom", CustomAgent(llm))
 ```
 
-### Расширение базы знаний
+### Extending the knowledge base
 
 ```python
-# Добавление новых вопросов
+# Adding new questions
 new_questions = [
     {
         "section": "New Technology",
-        "question": "Что такое новая технология?",
+        "question": "What is the new technology?",
         "grade": "Middle",
         "answers": {
-            "expected_answer": "Основной ответ",
-            "junior_level": "Что ожидать от джуна",
-            "middle_level": "Что ожидать от миддла",
-            "senior_level": "Что ожидать от сениора"
+            "expected_answer": "The main answer",
+            "junior_level": "What to expect from a junior",
+            "middle_level": "What to expect from a middle",
+            "senior_level": "What to expect from a senior"
         }
     }
 ]
@@ -678,33 +678,33 @@ new_questions = [
 system.knowledge_system.add_knowledge_to_rag(new_questions)
 ```
 
-### Кастомизация критериев оценки
+### Customizing the scoring criteria
 
 ```python
-# Изменение весов оценки
+# Changing the scoring weights
 CUSTOM_WEIGHTS = {
-    "technical_accuracy": 0.60,      # Увеличиваем важность
-    "depth_understanding": 0.25,     # Увеличиваем важность
-    "practical_experience": 0.10,    # Уменьшаем важность
-    "communication": 0.05            # Уменьшаем важность
+    "technical_accuracy": 0.60,      # Increase importance
+    "depth_understanding": 0.25,     # Increase importance
+    "practical_experience": 0.10,    # Decrease importance
+    "communication": 0.05            # Decrease importance
 }
 
 system.set_evaluation_weights(CUSTOM_WEIGHTS)
 ```
 
-## Производительность и масштабирование
+## Performance and scaling
 
-### Рекомендуемые характеристики
+### Recommended specifications
 
-- **CPU:** 4+ ядра
+- **CPU:** 4+ cores
 - **RAM:** 8+ GB
-- **Storage:** 10+ GB свободного места
-- **Network:** Стабильное подключение к интернету
+- **Storage:** 10+ GB of free space
+- **Network:** A stable internet connection
 
-### Оптимизация производительности
+### Performance optimization
 
 ```python
-# Настройка для высоких нагрузок
+# Configuration for high loads
 system = InterviewSystem(
     api_key="your_key",
     max_concurrent_interviews=10,
@@ -713,10 +713,10 @@ system = InterviewSystem(
 )
 ```
 
-### Мониторинг ресурсов
+### Resource monitoring
 
 ```python
-# Отслеживание использования ресурсов
+# Tracking resource usage
 import psutil
 
 def monitor_resources():
@@ -724,32 +724,32 @@ def monitor_resources():
     memory_percent = psutil.virtual_memory().percent
   
     if cpu_percent > 80:
-        print("⚠️ Высокая нагрузка на CPU")
+        print("⚠️ High CPU load")
     if memory_percent > 80:
-        print("⚠️ Высокое потребление памяти")
+        print("⚠️ High memory consumption")
 ```
 
-## Безопасность
+## Security
 
-### Защита API ключей
+### Protecting API keys
 
 ```python
-# Использование переменных окружения
+# Using environment variables
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 api_key = os.getenv("OPENROUTER_API_KEY")
 
-# Валидация ключей
+# Key validation
 if not api_key or "your" in api_key.lower():
-    raise ValueError("Неверный API ключ")
+    raise ValueError("Invalid API key")
 ```
 
-### Ограничение доступа
+### Access restriction
 
 ```python
-# Настройка CORS
+# CORS configuration
 from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
@@ -761,10 +761,10 @@ app.add_middleware(
 )
 ```
 
-### Валидация данных
+### Data validation
 
 ```python
-# Строгая валидация входных данных
+# Strict validation of input data
 from pydantic import BaseModel, validator
 
 class InterviewRequest(BaseModel):
@@ -774,11 +774,11 @@ class InterviewRequest(BaseModel):
     @validator('resume')
     def validate_resume(cls, v):
         if len(v) < 50:
-            raise ValueError('Резюме слишком короткое')
+            raise ValueError('Resume is too short')
         return v
 ```
 
-### Примеры тестов
+### Test examples
 
 ```python
 # tests/test_interview_system.py
@@ -796,35 +796,35 @@ def test_evaluation_weights():
 
 @pytest.mark.asyncio
 async def test_api_endpoints():
-    # Тестирование API эндпоинтов
+    # Testing the API endpoints
     pass
 ```
 
-## Агенты
+## Agents
 
-## Архитектура агентной системы
+## Agent system architecture
 
 ```mermaid
 flowchart TD
-    Start([Начало интервью]) --> Planner[📋 Planner<br/>Планировщик интервью]
+    Start([Interview start]) --> Planner[📋 Planner<br/>Interview planner]
   
-    Planner --> |Создает план по резюме/JD| Selector[🎯 Question Selector<br/>Селектор вопросов]
+    Planner --> |Creates a plan from resume/JD| Selector[🎯 Question Selector<br/>Question selector]
   
-    Selector --> |Выбирает вопрос по теме| ConvManager[💬 Conversation Manager<br/>Менеджер диалога]
+    Selector --> |Selects a question by topic| ConvManager[💬 Conversation Manager<br/>Dialogue manager]
   
-    ConvManager --> |Показывает вопрос,<br/>получает ответ| Evaluator[📊 Answer Evaluator<br/>Оценщик ответов]
+    ConvManager --> |Shows the question,<br/>gets the answer| Evaluator[📊 Answer Evaluator<br/>Answer evaluator]
   
-    Evaluator --> |Оценивает через LLM| Controller[🧠 Adaptive Controller<br/>Адаптивный контроллер]
+    Evaluator --> |Evaluates via LLM| Controller[🧠 Adaptive Controller<br/>Adaptive controller]
   
-    Controller --> Router{🔀 Router<br/>Роутер решений}
+    Controller --> Router{🔀 Router<br/>Decision router}
   
     Router --> |Continue with<br/>Generated Question| ConvManager
     Router --> |Skip Topic /<br/>Continue Standard| Selector
-    Router --> |Finish Interview /<br/>Max Questions| Reporter[📄 Report Generator<br/>Генератор отчетов]
+    Router --> |Finish Interview /<br/>Max Questions| Reporter[📄 Report Generator<br/>Report generator]
   
     Selector --> |All Topics<br/>Finished| Reporter
   
-    Reporter --> End([Итоговый отчет<br/>и рекомендация])
+    Reporter --> End([Final report<br/>and recommendation])
   
     style Start fill:#2E4053,color:white
     style End fill:#1A535C,color:white
@@ -837,7 +837,7 @@ flowchart TD
     style Reporter fill:#379683,color:white
 ```
 
-## Класс состояния
+## State class
 
 ```python
 classDiagram
@@ -868,133 +868,133 @@ classDiagram
     }
 ```
 
-## Агенты системы
+## System agents
 
-Система построена как **интеллектуальный робот-интервьюер**, состоящий из **6 специализированных агентов**, каждый из которых выполняет определенную роль в процессе интервью:
+The system is built as an **intelligent interviewer robot** consisting of **6 specialized agents**, each of which performs a specific role in the interview process:
 
-### 1. **Планировщик интервью** - "Стратег"
+### 1. **Interview planner** — "The Strategist"
 
-**Класс:** `InterviewPlannerAgent`
-**Функция:** Анализирует резюме и описание вакансии, создает персонализированный план интервью
+**Class:** `InterviewPlannerAgent`
+**Function:** Analyzes the resume and the job description, and creates a personalized interview plan
 
-**Возможности:**
+**Capabilities:**
 
-- **Умный анализ** резюме и требований вакансии
-- **Генерация плана** в строгом JSON формате (без markdown)
-- **Адаптивные лимиты:** до 6 вопросов на тему, до 30 вопросов общих
-- **Начальная тема:** всегда "Resume Discussion" для обсуждения опыта
-- **Результат:** структурированный план из 8 тематических блоков
+- **Smart analysis** of the resume and the vacancy requirements
+- **Plan generation** in strict JSON format (no markdown)
+- **Adaptive limits:** up to 6 questions per topic, up to 30 questions total
+- **Starting topic:** always "Resume Discussion" to discuss experience
+- **Result:** a structured plan of 8 topic blocks
 
-### 2. **Селектор вопросов** - "Куратор знаний"
+### 2. **Question selector** — "The Knowledge Curator"
 
-**Класс:** `QuestionSelectorAgent`
-**Функция:** Интеллектуальный поиск и выбор релевантных вопросов из базы знаний
+**Class:** `QuestionSelectorAgent`
+**Function:** Intelligent search and selection of relevant questions from the knowledge base
 
-**Возможности:**
+**Capabilities:**
 
-- **Семантический поиск** через ChromaDB и HuggingFace embeddings
-- **База знаний** с 99+ структурированными вопросами
-- **Контекстная релевантность** без привязки к уровню кандидата
-- **Дедупликация** - отслеживание уже заданных вопросов
-- **Fallback механизм** для генерации вопросов при отсутствии в базе
+- **Semantic search** via ChromaDB and HuggingFace embeddings
+- **Knowledge base** with 99+ structured questions
+- **Contextual relevance** not tied to the candidate's level
+- **Deduplication** — tracking questions already asked
+- **Fallback mechanism** for generating questions when none are in the base
 
-### 3. **Менеджер диалога** - "Модератор беседы"
+### 3. **Dialogue manager** — "The Conversation Moderator"
 
-**Класс:** `ConversationManagerAgent`
-**Функция:** Управляет потоком диалога и взаимодействием с кандидатом
+**Class:** `ConversationManagerAgent`
+**Function:** Manages the flow of dialogue and interaction with the candidate
 
-**Возможности:**
+**Capabilities:**
 
-- **Формулировка вопросов** в естественном стиле
-- **Генерация уточняющих вопросов** на основе контекста
-- **Создание подсказок** при затруднениях кандидата
-- **Раздельный учет** основных и вспомогательных вопросов
-- **Ведение истории** диалога с сохранением контекста
+- **Phrasing questions** in a natural style
+- **Generating follow-up questions** based on context
+- **Creating hints** when the candidate struggles
+- **Separate counting** of main and auxiliary questions
+- **Maintaining a history** of the dialogue while preserving context
 
-### 4. **Оценщик ответов** - "Эксперт-аналитик"
+### 4. **Answer evaluator** — "The Expert Analyst"
 
-**Класс:** `AnswerEvaluatorAgent`
-**Функция:** Многокритериальная оценка качества ответов кандидата
+**Class:** `AnswerEvaluatorAgent`
+**Function:** Multi-criteria evaluation of the quality of the candidate's answers
 
-**Критерии оценки (0-10 баллов):**
+**Scoring criteria (0–10 points):**
 
-- **technical_accuracy** - техническая точность ответа
-- **depth_of_knowledge** - глубина понимания темы
-- **practical_experience** - практический опыт
-- **communication_clarity** - ясность изложения
-- **problem_solving_approach** - подход к решению задач
-- **examples_and_use_cases** - примеры и случаи использования
+- **technical_accuracy** — the technical accuracy of the answer
+- **depth_of_knowledge** — the depth of understanding of the topic
+- **practical_experience** — practical experience
+- **communication_clarity** — clarity of expression
+- **problem_solving_approach** — the approach to solving problems
+- **examples_and_use_cases** — examples and use cases
 
-**Дополнительный анализ:**
+**Additional analysis:**
 
-- Выявление противоречий и красных флагов
-- Определение сильных и слабых сторон
-- Рекомендации для дальнейших вопросов
+- Identifying inconsistencies and red flags
+- Determining strengths and weaknesses
+- Recommendations for further questions
 
-### 5. **Адаптивный контроллер** - "Тактический координатор"
+### 5. **Adaptive controller** — "The Tactical Coordinator"
 
-**Класс:** `AdaptiveInterviewControllerAgent`
-**Функция:** Принятие решений о направлении интервью на основе анализа ответов
+**Class:** `AdaptiveInterviewControllerAgent`
+**Function:** Making decisions about the direction of the interview based on the analysis of answers
 
-**Стратегии адаптации:**
+**Adaptation strategies:**
 
-- **Углубление темы** при хороших ответах (генерация сложных вопросов)
-- **Поддержание уровня** при средних ответах
-- **Упрощение/подсказки** при слабых ответах
-- **Переключение темы** при достижении лимитов или низкой результативности
+- **Deepening the topic** for good answers (generating more difficult questions)
+- **Maintaining the level** for average answers
+- **Simplifying/hints** for weak answers
+- **Switching topics** when limits are reached or performance is low
 
-**Контроль лимитов:**
+**Limit control:**
 
-- Максимум 2 уточняющих вопроса подряд
-- Максимум 1 подсказка подряд
-- Отслеживание 3+ плохих/хороших ответов подряд
-- Автоматическое переключение между темами
+- A maximum of 2 follow-up questions in a row
+- A maximum of 1 hint in a row
+- Tracking 3+ poor/good answers in a row
+- Automatic switching between topics
 
-### 6. **Генератор отчетов** - "Итоговый аналитик"
+### 6. **Report generator** — "The Final Analyst"
 
-**Класс:** `ReportGeneratorAgent`
-**Функция:** Создание комплексного отчета по результатам интервью
+**Class:** `ReportGeneratorAgent`
+**Function:** Creating a comprehensive report on the interview results
 
-**Компоненты отчета:**
+**Report components:**
 
-- **Агрегированные оценки** по всем критериям
-- **Анализ сильных сторон** кандидата
-- **Выявленные слабости** и области развития
-- **Красные флаги** и противоречия в ответах
-- **Итоговая рекомендация:** HIRE/MAYBE/REJECT
-- **Обоснование решения** с конкретными примерами
-- **Рекомендации** для HR-команды
+- **Aggregated scores** across all criteria
+- **Analysis of the candidate's strengths**
+- **Identified weaknesses** and areas for development
+- **Red flags** and inconsistencies in the answers
+- **Final recommendation:** HIRE/MAYBE/REJECT
+- **Justification of the decision** with concrete examples
+- **Recommendations** for the HR team
 
-## Диаграмма принятия решений
+## Decision-making diagram
 
 ```mermaid
 flowchart TD
-    Start([🧠 Адаптивный контроллер<br/>Анализ состояния]) --> CheckLimits{🔍 Проверка лимитов}
+    Start([🧠 Adaptive controller<br/>State analysis]) --> CheckLimits{🔍 Limit check}
     
-    CheckLimits --> |Лимит вопросов в теме<br/>достигнут| SkipTopic[🚀 Пропустить тему<br/>Skip Topic]
-    CheckLimits --> |Лимит уточняющих >= max<br/>Сбросить счетчик| SameLevel[📊 Вопрос того же уровня<br/>Same Level Question]
-    CheckLimits --> |Лимит подсказок >= max<br/>Сбросить счетчик| SameLevel
-    CheckLimits --> |Лимиты в норме| CheckUnknown{❓ Ответ не знаю?}
+    CheckLimits --> |Topic question limit<br/>reached| SkipTopic[🚀 Skip the topic<br/>Skip Topic]
+    CheckLimits --> |Follow-up limit >= max<br/>Reset the counter| SameLevel[📊 Same-level question<br/>Same Level Question]
+    CheckLimits --> |Hint limit >= max<br/>Reset the counter| SameLevel
+    CheckLimits --> |Limits are fine| CheckUnknown{❓ "I don't know" answer?}
     
-    CheckUnknown --> |LLM определил<br/>неуверенность/незнание| CheckHintLimit{💡 Подсказки < max?}
-    CheckUnknown --> |Содержательный ответ| CheckFlags{🚩 Несостыковки или<br/>красные флаги?}
+    CheckUnknown --> |LLM detected<br/>uncertainty/lack of knowledge| CheckHintLimit{💡 Hints < max?}
+    CheckUnknown --> |Substantive answer| CheckFlags{🚩 Inconsistencies or<br/>red flags?}
     
-    CheckHintLimit --> |Можно дать подсказку| ProvideHint[💡 Дать подсказку<br/>Provide Hint]
-    CheckHintLimit --> |Лимит подсказок исчерпан| SameLevel
+    CheckHintLimit --> |A hint can be given| ProvideHint[💡 Provide a hint<br/>Provide Hint]
+    CheckHintLimit --> |Hint limit exhausted| SameLevel
     
-    CheckFlags --> |Обнаружены проблемы| DeepenTopic[🔬 Углубить тему<br/>Deepen Topic]
-    CheckFlags --> |Проблем нет| CheckStreaks{📊 Анализ серий ответов}
+    CheckFlags --> |Problems detected| DeepenTopic[🔬 Deepen the topic<br/>Deepen Topic]
+    CheckFlags --> |No problems| CheckStreaks{📊 Answer streak analysis}
     
-    CheckStreaks --> |Плохих ответов >= max_poor| SkipTopic
-    CheckStreaks --> |Хороших ответов >= max_good| SkipTopic
-    CheckStreaks --> |Средних ответов >= max_medium| SkipTopic
-    CheckStreaks --> |Серии в норме| CheckLastScore{📈 Последняя оценка}
+    CheckStreaks --> |Poor answers >= max_poor| SkipTopic
+    CheckStreaks --> |Good answers >= max_good| SkipTopic
+    CheckStreaks --> |Average answers >= max_medium| SkipTopic
+    CheckStreaks --> |Streaks are fine| CheckLastScore{📈 Last score}
     
-    CheckLastScore --> |Оценка >= 70%<br/>Отличный результат| DeepenTopic
-    CheckLastScore --> |Оценка 40-69%<br/>Средний результат| SameLevel
-    CheckLastScore --> |Оценка < 40%<br/>Слабый результат| ProvideHint
+    CheckLastScore --> |Score >= 70%<br/>Excellent result| DeepenTopic
+    CheckLastScore --> |Score 40-69%<br/>Average result| SameLevel
+    CheckLastScore --> |Score < 40%<br/>Weak result| ProvideHint
     
-    %% Стили для лучшей читаемости
+    %% Styles for better readability
     classDef startStyle fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#000
     classDef decisionStyle fill:#fff8e1,stroke:#f57c00,stroke-width:2px,color:#000
     classDef skipStyle fill:#ffebee,stroke:#d32f2f,stroke-width:2px,color:#000
@@ -1010,40 +1010,40 @@ flowchart TD
     class DeepenTopic deepenStyle
 ```
 
-## Бэкенд (Flask) — Руководство по запуску и API
+## Backend (Flask) — Launch guide and API
 
-Этот сервис — REST API на Flask для платформы подбора и проведения собеседований. Он работает с MongoDB, интегрируется с AI-сервисом оценки резюме и интервью, поддерживает загрузку резюме в Yandex Object Storage и CORS для фронтенда.
+This service is a Flask REST API for the recruitment and interviewing platform. It works with MongoDB, integrates with the AI service for resume and interview scoring, supports uploading resumes to Yandex Object Storage, and CORS for the frontend.
 
-### Технологии
+### Technologies
 
 - **Flask 3** (+ CORS)
 - **MongoDB** (pymongo)
 - **JWT** (PyJWT)
-- **bcrypt** (хеширование паролей)
-- **Yandex Object Storage** (boto3) — опционально
+- **bcrypt** (password hashing)
+- **Yandex Object Storage** (boto3) — optional
 
-### Структура проекта (бэкенд)
+### Project structure (backend)
 
-- `run.py` — точка входа
-- `config.py` — конфигурация
-- `app/__init__.py` — фабрика приложения и регистрация блюпринтов
-- `app/auth` — аутентификация и регистрация
-- `app/users` — профиль пользователя и резюме
-- `app/companies` — профиль компании и аватар
-- `app/vacancies` — CRUD вакансий и вопросы
-- `app/interviews` — проверки резюме, интервью, ответы, статусы
-- `app/core` — БД, декораторы (`token_required`, `roles_required`), утилиты
-- `app/services` — работа с S3, AI-HR
+- `run.py` — entry point
+- `config.py` — configuration
+- `app/__init__.py` — the application factory and blueprint registration
+- `app/auth` — authentication and registration
+- `app/users` — user profile and resume
+- `app/companies` — company profile and avatar
+- `app/vacancies` — vacancy CRUD and questions
+- `app/interviews` — resume checks, interviews, answers, statuses
+- `app/core` — DB, decorators (`token_required`, `roles_required`), utilities
+- `app/services` — working with S3, AI-HR
 
-### Переменные окружения (.env)
+### Environment variables (.env)
 
-- `MONGO_URI` — строка подключения к MongoDB (обязательно)
-- `SECRET_KEY` — ключ для подписи JWT (обязательно)
-- `AI_HR_SERVICE_URL` — URL AI-сервиса (по умолчанию `http://127.0.0.1:8002`, в docker-compose — `http://ai-hr:8002`)
-- `YC_STORAGE_BUCKET` — имя бакета в Yandex Object Storage (если используется)
-- `OPENROUTER_API_KEY` — ключ для AI (используется в сервисе ai-hr)
+- `MONGO_URI` — the MongoDB connection string (required)
+- `SECRET_KEY` — the key for signing JWTs (required)
+- `AI_HR_SERVICE_URL` — the AI service URL (default `http://127.0.0.1:8002`, in docker-compose — `http://ai-hr:8002`)
+- `YC_STORAGE_BUCKET` — the bucket name in Yandex Object Storage (if used)
+- `OPENROUTER_API_KEY` — the AI key (used in the ai-hr service)
 
-Пример `.env` (в корне репозитория):
+Example `.env` (in the repository root):
 
 ```
 MONGO_URI=mongodb://user:pass@host:27017/dbname
@@ -1052,187 +1052,187 @@ AI_HR_SERVICE_URL=http://ai-hr:8002
 YC_STORAGE_BUCKET=my-bucket
 ```
 
-### Установка и запуск локально
+### Installation and local launch
 
-Требуется Python 3.11+ и запущенная MongoDB.
+Requires Python 3.11+ and a running MongoDB.
 
-1) Установите зависимости (можно через Dockerfile, но проще локально):
+1) Install the dependencies (you can use the Dockerfile, but it's simpler locally):
 
 ```
 pip install Flask==3.0.3 flask-cors==4.0.1 pymongo==4.10.1 python-dotenv==1.0.1 requests==2.32.3 boto3==1.35.71 PyPDF2==3.0.1 python-docx==1.1.2 bcrypt==4.2.0 PyJWT==2.9.0
 ```
 
-2) Создайте `.env` в корне (см. выше).
-3) Запустите бэкенд:
+2) Create a `.env` in the root (see above).
+3) Start the backend:
 
 ```
 cd backend
 python run.py
 ```
 
-Сервис поднимется на `http://127.0.0.1:5000`.
+The service will come up on `http://127.0.0.1:5000`.
 
-### Запуск через Docker (рекомендуется с фронтендом и сервисами)
+### Launching via Docker (recommended, together with the frontend and services)
 
-В корне проекта есть `docker-compose.yml`, который поднимает фронтенд, бэкенд, ai-hr, transcription, tts.
+The project root contains a `docker-compose.yml` that brings up the frontend, backend, ai-hr, transcription, and tts.
 
-1) Создайте `.env` в корне (см. выше)
-2) Запустите:
+1) Create a `.env` in the root (see above)
+2) Run:
 
 ```
 docker compose up -d --build
 ```
 
-Бэкенд будет доступен на `http://localhost:5000`.
+The backend will be available at `http://localhost:5000`.
 
-### Аутентификация
+### Authentication
 
-- Логин выдает JWT: `POST /login` (email, password)
-- Токен передается в заголовке `Authorization: Bearer <token>`
-- У ресурсов могут быть ограничения по ролям: `user` либо `company`
+- Login issues a JWT: `POST /login` (email, password)
+- The token is passed in the `Authorization: Bearer <token>` header
+- Resources may have role restrictions: `user` or `company`
 
-### Хранилище резюме
+### Resume storage
 
-- По умолчанию файлы могут сохраняться локально в `uploads/resumes`
-- При наличии `YC_STORAGE_BUCKET` и корректных ключей окружения используется Yandex Object Storage
+- By default, files may be saved locally in `uploads/resumes`
+- If `YC_STORAGE_BUCKET` and correct environment keys are present, Yandex Object Storage is used
 
-### Подробное описание API
+### Detailed API description
 
-#### АВТОРИЗАЦИЯ (`app/auth/routes.py`)
+#### AUTHORIZATION (`app/auth/routes.py`)
 
-**POST /login** — Вход пользователя или компании
+**POST /login** — Login for a user or a company
 
 ```json
-// Запрос
+// Request
 {
   "email": "user@example.com",
   "password": "password123"
 }
 
-// Ответ (200)
+// Response (200)
 {
   "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...",
-  "role": "user" // или "company"
+  "role": "user" // or "company"
 }
 
-// Ошибки: 400 (неполные данные), 401 (неверные данные)
+// Errors: 400 (incomplete data), 401 (invalid data)
 ```
 
-**POST /register** — Регистрация пользователя с резюме
+**POST /register** — User registration with a resume
 
 ```javascript
-// Запрос (multipart/form-data)
+// Request (multipart/form-data)
 const formData = new FormData();
 formData.append('email', 'user@example.com');
 formData.append('password', 'password123');
-formData.append('name', 'Иван');
-formData.append('surname', 'Иванов');
+formData.append('name', 'Ivan');
+formData.append('surname', 'Ivanov');
 formData.append('telegram_id', '@ivanov');
 formData.append('resume', file); // PDF/DOC/DOCX
 
-// Ответ (201)
+// Response (201)
 {
-  "message": "Пользователь успешно зарегистрирован"
+  "message": "User registered successfully"
 }
 
-// Ошибки: 400 (отсутствует файл/неверный тип), 409 (email уже существует)
+// Errors: 400 (missing file/invalid type), 409 (email already exists)
 ```
 
-**POST /register/company** — Регистрация компании
+**POST /register/company** — Company registration
 
 ```json
-// Запрос
+// Request
 {
-  "company_name": "ООО Рога и Копыта",
+  "company_name": "Roga i Kopyta LLC",
   "inn": "1234567890",
   "ogrn": "1234567890123",
-  "legal_address": "г. Москва, ул. Примерная, д. 1",
+  "legal_address": "Moscow, Primernaya St., 1",
   "email": "hr@company.com",
   "password": "password123"
 }
 
-// Ответ (201)
+// Response (201)
 {
-  "message": "Компания успешно зарегистрирована"
+  "message": "Company registered successfully"
 }
 
-// Ошибки: 400 (неполные данные), 409 (компания уже существует)
+// Errors: 400 (incomplete data), 409 (company already exists)
 ```
 
-#### ПОЛЬЗОВАТЕЛИ (`app/users/routes.py`)
+#### USERS (`app/users/routes.py`)
 
-**GET /profile** — Получить профиль текущего пользователя
+**GET /profile** — Get the current user's profile
 
 ```json
-// Ответ (200)
+// Response (200)
 {
   "email": "user@example.com",
   "telegram_id": "@ivanov",
-  "name": "Иван",
-  "surname": "Иванов",
+  "name": "Ivan",
+  "surname": "Ivanov",
   "role": "user",
   "resume_path": "https://storage.yandexcloud.net/bucket/resumes/user_resume.pdf"
 }
 
-// Ошибки: 404 (пользователь не найден)
+// Errors: 404 (user not found)
 ```
 
-**PUT /user/updateprofile** — Обновить профиль пользователя
+**PUT /user/updateprofile** — Update the user's profile
 
 ```json
-// Запрос
+// Request
 {
-  "name": "Иван",
-  "surname": "Петров",
+  "name": "Ivan",
+  "surname": "Petrov",
   "telegram_id": "@petrov"
 }
 
-// Ответ (200)
+// Response (200)
 {
-  "message": "Профиль успешно обновлен"
+  "message": "Profile updated successfully"
 }
 
-// Ошибки: 400 (нет данных), 404 (пользователь не найден)
+// Errors: 400 (no data), 404 (user not found)
 ```
 
-**GET /download-resume** — Скачать резюме текущего пользователя
+**GET /download-resume** — Download the current user's resume
 
 ```javascript
-// Ответ: файл с заголовками
+// Response: a file with headers
 Content-Type: application/pdf
 Content-Disposition: attachment; filename="resume.pdf"
 Content-Length: 12345
 
-// Ошибки: 404 (резюме не найдено), 500 (ошибка S3)
+// Errors: 404 (resume not found), 500 (S3 error)
 ```
 
-**POST /update-resume** — Заменить резюме пользователя
+**POST /update-resume** — Replace the user's resume
 
 ```javascript
-// Запрос (multipart/form-data)
+// Request (multipart/form-data)
 const formData = new FormData();
 formData.append('resume', newFile); // PDF/DOC/DOCX
 
-// Ответ (200)
+// Response (200)
 {
-  "message": "Резюме успешно обновлено",
+  "message": "Resume updated successfully",
   "resume_path": "https://storage.yandexcloud.net/bucket/resumes/new_resume.pdf"
 }
 
-// Ошибки: 400 (нет файла/неверный тип), 404 (пользователь не найден)
+// Errors: 400 (no file/invalid type), 404 (user not found)
 ```
 
-**GET /download-candidate-resume?user_id=...** — Скачать резюме кандидата (только для компаний)
+**GET /download-candidate-resume?user_id=...** — Download a candidate's resume (companies only)
 
 ```javascript
-// Ответ: файл с заголовками (аналогично /download-resume)
-// Ошибки: 400 (нет user_id), 404 (кандидат/резюме не найдено)
+// Response: a file with headers (similar to /download-resume)
+// Errors: 400 (no user_id), 404 (candidate/resume not found)
 ```
 
-**GET /user-interviews** — Список интервью пользователя
+**GET /user-interviews** — A list of the user's interviews
 
 ```json
-// Ответ (200)
+// Response (200)
 {
   "interviews": [
     {
@@ -1247,10 +1247,10 @@ formData.append('resume', newFile); // PDF/DOC/DOCX
 }
 ```
 
-**GET /user-interviews-status-changes** — История изменений статусов
+**GET /user-interviews-status-changes** — History of status changes
 
 ```json
-// Ответ (200)
+// Response (200)
 {
   "status_changes": [
     {
@@ -1266,44 +1266,44 @@ formData.append('resume', newFile); // PDF/DOC/DOCX
 }
 ```
 
-#### КОМПАНИИ (`app/companies/routes.py`)
+#### COMPANIES (`app/companies/routes.py`)
 
-**GET /company** — Данные компании (только для компаний)
+**GET /company** — Company data (companies only)
 
 ```json
-// Ответ (200)
+// Response (200)
 {
   "email": "hr@company.com",
   "inn": "1234567890",
   "ogrn": "1234567890123",
-  "company_name": "ООО Рога и Копыта",
-  "legal_address": "г. Москва, ул. Примерная, д. 1",
+  "company_name": "Roga i Kopyta LLC",
+  "legal_address": "Moscow, Primernaya St., 1",
   "role": "company"
 }
 
-// Ошибки: 404 (компания не найдена)
+// Errors: 404 (company not found)
 ```
 
-**POST /company/avatar** — Загрузка аватара компании
+**POST /company/avatar** — Uploading a company avatar
 
 ```javascript
-// Запрос (multipart/form-data)
+// Request (multipart/form-data)
 const formData = new FormData();
 formData.append('avatar', imageFile); // JPG/PNG
 
-// Ответ (200)
+// Response (200)
 {
-  "message": "Аватар успешно сохранен",
+  "message": "Avatar saved successfully",
   "avatar_url": "/company_avatars/roga_i_kopyta.jpg"
 }
 
-// Ошибки: 400 (нет файла), 404 (компания не найдена)
+// Errors: 400 (no file), 404 (company not found)
 ```
 
-**GET /companies?page=1&per_page=10** — Список компаний
+**GET /companies?page=1&per_page=10** — A list of companies
 
 ```json
-// Ответ (200)
+// Response (200)
 {
   "total": 25,
   "page": 1,
@@ -1312,44 +1312,44 @@ formData.append('avatar', imageFile); // JPG/PNG
   "companies": [
     {
       "_id": "64f1a2b3c4d5e6f7a8b9c0d5",
-      "company_name": "ООО Рога и Копыта",
+      "company_name": "Roga i Kopyta LLC",
       "inn": "1234567890",
       "ogrn": "1234567890123",
-      "legal_address": "г. Москва, ул. Примерная, д. 1",
+      "legal_address": "Moscow, Primernaya St., 1",
       "email": "hr@company.com",
       "role": "company"
     }
   ]
 }
 
-// Ошибки: 400 (неверные параметры пагинации)
+// Errors: 400 (invalid pagination parameters)
 ```
 
-**PUT /company/updateprofile** — Обновление профиля компании
+**PUT /company/updateprofile** — Updating the company profile
 
 ```json
-// Запрос
+// Request
 {
-  "company_name": "ООО Новое Название",
+  "company_name": "New Name LLC",
   "inn": "0987654321",
   "ogrn": "3210987654321",
-  "legal_address": "г. СПб, ул. Новая, д. 2"
+  "legal_address": "St. Petersburg, Novaya St., 2"
 }
 
-// Ответ (200)
+// Response (200)
 {
-  "message": "Профиль компании успешно обновлен"
+  "message": "Company profile updated successfully"
 }
 
-// Ошибки: 400 (нет данных), 404 (компания не найдена)
+// Errors: 400 (no data), 404 (company not found)
 ```
 
-#### ВАКАНСИИ (`app/vacancies/routes.py`)
+#### VACANCIES (`app/vacancies/routes.py`)
 
-**POST /vacancies/create** — Создать вакансию (только для компаний)
+**POST /vacancies/create** — Create a vacancy (companies only)
 
 ```json
-// Запрос
+// Request
 {
   "title": "Python Developer",
   "grade": "Middle",
@@ -1357,28 +1357,28 @@ formData.append('avatar', imageFile); // JPG/PNG
   "min_experience": 2,
   "max_experience": 5,
   "work_field": "Backend Development",
-  "work_address": "г. Москва, ул. Рабочая, д. 1",
+  "work_address": "Moscow, Rabochaya St., 1",
   "optional_skills": ["Redis", "Docker"],
-  "description": "Разработка веб-приложений на Python",
+  "description": "Developing web applications in Python",
   "questions": [
-    "Расскажите о вашем опыте работы с Django",
-    "Как вы тестируете код?"
+    "Tell us about your experience with Django",
+    "How do you test your code?"
   ]
 }
 
-// Ответ (201)
+// Response (201)
 {
-  "message": "Вакансия успешно создана",
+  "message": "Vacancy created successfully",
   "vacancy_id": "64f1a2b3c4d5e6f7a8b9c0d6"
 }
 
-// Ошибки: 400 (неполные данные), 500 (ошибка сохранения)
+// Errors: 400 (incomplete data), 500 (save error)
 ```
 
-**GET /vacancies?page=1&per_page=10&company_id=...** — Список вакансий
+**GET /vacancies?page=1&per_page=10&company_id=...** — A list of vacancies
 
 ```json
-// Ответ (200)
+// Response (200)
 {
   "total": 15,
   "page": 1,
@@ -1394,90 +1394,90 @@ formData.append('avatar', imageFile); // JPG/PNG
       "min_experience": 2,
       "max_experience": 5,
       "work_field": "Backend Development",
-      "work_address": "г. Москва",
+      "work_address": "Moscow",
       "optional_skills": ["Redis"],
-      "description": "Разработка веб-приложений",
-      "questions": ["Расскажите о Django"],
+      "description": "Developing web applications",
+      "questions": ["Tell us about Django"],
       "created_at": "2023-09-01T10:00:00Z"
     }
   ]
 }
 
-// Ошибки: 400 (неверные параметры)
+// Errors: 400 (invalid parameters)
 ```
 
-**POST /vacancies/{vacancy_id}/questions** — Задать вопросы для вакансии (владелец)
+**POST /vacancies/{vacancy_id}/questions** — Set questions for a vacancy (owner)
 
 ```json
-// Запрос
+// Request
 {
   "questions": [
-    "Расскажите о вашем опыте работы с Python",
-    "Как вы подходите к тестированию кода?",
-    "Опишите сложную задачу, которую вы решали"
+    "Tell us about your experience with Python",
+    "How do you approach code testing?",
+    "Describe a difficult problem you solved"
   ]
 }
 
-// Ответ (200)
+// Response (200)
 {
-  "message": "Вопросы для вакансии успешно обновлены"
+  "message": "Vacancy questions updated successfully"
 }
 
-// Ошибки: 400 (неверный формат), 403 (нет прав), 404 (вакансия не найдена)
+// Errors: 400 (invalid format), 403 (no permission), 404 (vacancy not found)
 ```
 
-**GET /vacancies/{vacancy_id}/questions** — Получить вопросы вакансии
+**GET /vacancies/{vacancy_id}/questions** — Get a vacancy's questions
 
 ```json
-// Ответ (200)
+// Response (200)
 {
   "vacancy_id": "64f1a2b3c4d5e6f7a8b9c0d6",
   "title": "Python Developer",
   "questions": [
-    "Расскажите о вашем опыте работы с Python",
-    "Как вы подходите к тестированию кода?"
+    "Tell us about your experience with Python",
+    "How do you approach code testing?"
   ]
 }
 
-// Ошибки: 400 (неверный ID), 404 (вакансия не найдена)
+// Errors: 400 (invalid ID), 404 (vacancy not found)
 ```
 
-**PUT /vacancies/{vacancy_id}** — Обновить вакансию (владелец)
+**PUT /vacancies/{vacancy_id}** — Update a vacancy (owner)
 
 ```json
-// Запрос
+// Request
 {
   "title": "Senior Python Developer",
   "grade": "Senior",
   "required_skills": ["Python", "Django", "FastAPI"],
   "min_experience": 5,
   "max_experience": 8,
-  "description": "Разработка высоконагруженных систем"
+  "description": "Developing high-load systems"
 }
 
-// Ответ (200)
+// Response (200)
 {
-  "message": "Вакансия успешно обновлена"
+  "message": "Vacancy updated successfully"
 }
 
-// Ошибки: 400 (нет данных), 403 (нет прав), 404 (вакансия не найдена)
+// Errors: 400 (no data), 403 (no permission), 404 (vacancy not found)
 ```
 
-**DELETE /vacancies/{vacancy_id}** — Удалить вакансию (владелец)
+**DELETE /vacancies/{vacancy_id}** — Delete a vacancy (owner)
 
 ```json
-// Ответ (200)
+// Response (200)
 {
-  "message": "Вакансия успешно удалена"
+  "message": "Vacancy deleted successfully"
 }
 
-// Ошибки: 403 (нет прав), 404 (вакансия не найдена), 500 (ошибка удаления)
+// Errors: 403 (no permission), 404 (vacancy not found), 500 (delete error)
 ```
 
-**GET /vacancies/{vacancy_id}/candidates** — Кандидаты по вакансии (владелец)
+**GET /vacancies/{vacancy_id}/candidates** — Candidates for a vacancy (owner)
 
 ```json
-// Ответ (200)
+// Response (200)
 {
   "total": 5,
   "page": 1,
@@ -1491,118 +1491,118 @@ formData.append('avatar', imageFile); // JPG/PNG
       "vacancy_id": "64f1a2b3c4d5e6f7a8b9c0d6",
       "status": "completed",
       "resume_score": 85,
-      "interview_analysis": "Кандидат показал хорошие знания Python...",
-      "recommendation": "Рекомендуем к найму",
+      "interview_analysis": "The candidate demonstrated good knowledge of Python...",
+      "recommendation": "Recommended for hire",
       "created_at": "2023-09-01T10:00:00Z",
-      "user_name": "Иван Иванов",
+      "user_name": "Ivan Ivanov",
       "user_email": "ivan@example.com"
     }
   ]
 }
 
-// Ошибки: 400 (неверные параметры), 403 (нет прав), 404 (вакансия не найдена)
+// Errors: 400 (invalid parameters), 403 (no permission), 404 (vacancy not found)
 ```
 
-#### СОБЕСЕДОВАНИЯ (`app/interviews/routes.py`)
+#### INTERVIEWS (`app/interviews/routes.py`)
 
-**POST /check-resume** — Проверить соответствие резюме вакансии (только пользователи)
+**POST /check-resume** — Check how well a resume matches a vacancy (users only)
 
 ```json
-// Запрос
+// Request
 {
   "vacancy_id": "64f1a2b3c4d5e6f7a8b9c0d6"
 }
 
-// Ответ (200)
+// Response (200)
 {
   "success": true,
   "resume_score": 85,
   "can_proceed": true,
-  "message": "Проверка резюме завершена успешно",
+  "message": "Resume check completed successfully",
   "interview_id": "64f1a2b3c4d5e6f7a8b9c0d7"
 }
 
-// При низкой оценке (< 20):
+// On a low score (< 20):
 {
   "success": true,
   "resume_score": 15,
   "can_proceed": false,
-  "message": "К сожалению, ваше резюме не соответствует требованиям данной вакансии"
+  "message": "Unfortunately, your resume does not meet the requirements of this vacancy"
 }
 
-// Ошибки: 400 (нет vacancy_id/резюме), 404 (вакансия/пользователь не найдены)
+// Errors: 400 (no vacancy_id/resume), 404 (vacancy/user not found)
 ```
 
-**POST /convert-resume** — Проверить готовность интервью (только пользователи)
+**POST /convert-resume** — Check whether the interview is ready (users only)
 
 ```json
-// Запрос
+// Request
 {
   "vacancy_id": "64f1a2b3c4d5e6f7a8b9c0d6"
 }
 
-// Ответ (200)
+// Response (200)
 {
   "interview_id": "64f1a2b3c4d5e6f7a8b9c0d7",
-  "message": "Собеседование готово к началу"
+  "message": "The interview is ready to start"
 }
 
-// Ошибки: 400 (резюме не проверено), 403 (резюме отклонено), 404 (не найдено)
+// Errors: 400 (resume not checked), 403 (resume rejected), 404 (not found)
 ```
 
-**POST /interviews/answer** — Отправить ответ в интервью (только пользователи)
+**POST /interviews/answer** — Submit an answer in an interview (users only)
 
 ```json
-// Первый запрос (старт интервью)
+// First request (interview start)
 {
   "interview_id": "64f1a2b3c4d5e6f7a8b9c0d7",
   "mlinterview_id": "",
   "answer_text": ""
 }
 
-// Ответ (201)
+// Response (201)
 {
   "interview_id": "64f1a2b3c4d5e6f7a8b9c0d7",
   "mlinterview_id": "ai_interview_123",
-  "question": "Расскажите о себе и своем опыте работы",
-  "current_question": "Расскажите о себе и своем опыте работы",
+  "question": "Tell us about yourself and your work experience",
+  "current_question": "Tell us about yourself and your work experience",
   "status": "active",
   "answer_text": "",
   "voice_analysis": null,
-  "message": "Ответ успешно сохранен"
+  "message": "Answer saved successfully"
 }
 
-// Последующие запросы
+// Subsequent requests
 {
   "interview_id": "64f1a2b3c4d5e6f7a8b9c0d7",
   "mlinterview_id": "ai_interview_123",
-  "question": "Расскажите о себе и своем опыте работы",
-  "answer_text": "Я работаю Python разработчиком 3 года...",
+  "question": "Tell us about yourself and your work experience",
+  "answer_text": "I've been working as a Python developer for 3 years...",
   "analysis": {
     "confidence": 0.95,
     "emotions": ["confident", "professional"]
   }
 }
 
-// Ответ при завершении (201)
+// Response on completion (201)
 {
   "interview_id": "64f1a2b3c4d5e6f7a8b9c0d7",
   "mlinterview_id": "ai_interview_123",
-  "question": "Есть ли у вас вопросы к нам?",
-  "current_question": "Есть ли у вас вопросы к нам?",
+  "question": "Do you have any questions for us?",
+  "current_question": "Do you have any questions for us?",
   "status": "completed",
-  "answer_text": "Да, расскажите о команде...",
+  "answer_text": "Yes, tell me about the team...",
   "voice_analysis": {...},
-  "message": "Ответ успешно сохранен"
+  "message": "Answer saved successfully"
 }
 
-// Ошибки: 400 (неполные данные), 500 (ошибка AI-сервиса)
+// Errors: 400 (incomplete data), 500 (AI service error)
 ```
 
-**GET /interviews/{interview_id}/qna** — Получить вопросы и ответы интервью
+**GET /interviews/{interview_id}/qna** — Get the interview's questions and answers
 
 ```json
-// Ответ (200)
+// Response (200)
 {
   "interview_id": "64f1a2b3c4d5e6f7a8b9c0d7",
   "qna": [
@@ -1610,9 +1610,9 @@ formData.append('avatar', imageFile); // JPG/PNG
       "_id": "64f1a2b3c4d5e6f7a8b9c0d8",
       "interview_id": "64f1a2b3c4d5e6f7a8b9c0d7",
       "mlinterview_id": "ai_interview_123",
-      "question": "Расскажите о себе и своем опыте работы",
+      "question": "Tell us about yourself and your work experience",
       "status": "active",
-      "answer_text": "Я работаю Python разработчиком 3 года...",
+      "answer_text": "I've been working as a Python developer for 3 years...",
       "voice_analysis": {...},
       "created_at": "2023-09-01T10:00:00Z"
     },
@@ -1620,56 +1620,56 @@ formData.append('avatar', imageFile); // JPG/PNG
       "_id": "64f1a2b3c4d5e6f7a8b9c0d9",
       "interview_id": "64f1a2b3c4d5e6f7a8b9c0d7",
       "mlinterview_id": "ai_interview_123",
-      "question": "Как вы тестируете код?",
+      "question": "How do you test your code?",
       "status": "completed",
-      "answer_text": "Использую pytest для unit-тестов...",
-      "recommendation": "Рекомендуем к найму",
+      "answer_text": "I use pytest for unit tests...",
+      "recommendation": "Recommended for hire",
       "voice_analysis": {...},
       "created_at": "2023-09-01T10:05:00Z"
     }
   ]
 }
 
-// Ошибки: 400 (неверный ID), 403 (нет прав), 404 (интервью не найдено)
+// Errors: 400 (invalid ID), 403 (no permission), 404 (interview not found)
 ```
 
-**PUT /interviews/{interview_id}/status** — Изменить статус интервью (только компания-владелец)
+**PUT /interviews/{interview_id}/status** — Change the interview status (owner company only)
 
 ```json
-// Запрос
+// Request
 {
   "status": "test_task"
 }
 
-// Ответ (200)
+// Response (200)
 {
-  "message": "Статус собеседования успешно изменен на \"test_task\""
+  "message": "Interview status successfully changed to \"test_task\""
 }
 
-// Ошибки: 400 (неверный статус), 403 (нет прав), 404 (интервью не найдено)
+// Errors: 400 (invalid status), 403 (no permission), 404 (interview not found)
 ```
 
-**PUT /interviews/change-status** — Изменить статус с записью в историю (только компании)
+**PUT /interviews/change-status** — Change the status with a history record (companies only)
 
 ```json
-// Запрос
+// Request
 {
   "interview_id": "64f1a2b3c4d5e6f7a8b9c0d7",
   "status": "finalist"
 }
 
-// Ответ (200)
+// Response (200)
 {
-  "message": "Статус собеседования успешно обновлен"
+  "message": "Interview status updated successfully"
 }
 
-// Ошибки: 400 (неполные данные/неверный статус), 404 (интервью не найдено)
+// Errors: 400 (incomplete data/invalid status), 404 (interview not found)
 ```
 
-**GET /vacancies/{vacancy_id}/interviews** — Интервью по вакансии (владелец компании)
+**GET /vacancies/{vacancy_id}/interviews** — Interviews for a vacancy (owner company)
 
 ```json
-// Ответ (200)
+// Response (200)
 {
   "total": 3,
   "page": 1,
@@ -1682,54 +1682,54 @@ formData.append('avatar', imageFile); // JPG/PNG
       "vacancy_id": "64f1a2b3c4d5e6f7a8b9c0d6",
       "status": "completed",
       "resume_score": 85,
-      "interview_analysis": "Кандидат показал отличные знания...",
-      "recommendation": "Рекомендуем к найму",
+      "interview_analysis": "The candidate demonstrated excellent knowledge...",
+      "recommendation": "Recommended for hire",
       "created_at": "2023-09-01T10:00:00Z",
       "updated_at": "2023-09-01T15:00:00Z"
     }
   ]
 }
 
-// Ошибки: 400 (неверные параметры), 403 (нет прав), 404 (вакансия не найдена)
+// Errors: 400 (invalid parameters), 403 (no permission), 404 (vacancy not found)
 ```
 
-**DELETE /interviews/{interview_id}** — Удалить интервью (только владелец-пользователь)
+**DELETE /interviews/{interview_id}** — Delete an interview (owner user only)
 
 ```json
-// Ответ (200)
+// Response (200)
 {
-  "message": "Интервью успешно удалено",
+  "message": "Interview deleted successfully",
   "deleted_interview_id": "64f1a2b3c4d5e6f7a8b9c0d7",
   "deleted_answers": 5,
   "deleted_status_history": 2
 }
 
-// Ошибки: 403 (нет прав), 404 (интервью не найдено), 500 (ошибка удаления)
+// Errors: 403 (no permission), 404 (interview not found), 500 (delete error)
 ```
 
-#### Статусы интервью
+#### Interview statuses
 
-- `rejected` — Отклонено (низкая оценка резюме или решение HR)
-- `active` — Активно (готово к проведению)
-- `completed` — Завершено (пользователь прошел все вопросы)
-- `test_task` — Тестовое задание (HR назначил)
-- `finalist` — Финалист (прошел отбор)
-- `offer` — Предложение о работе
+- `rejected` — Rejected (low resume score or HR decision)
+- `active` — Active (ready to be conducted)
+- `completed` — Completed (the user went through all the questions)
+- `test_task` — Test task (assigned by HR)
+- `finalist` — Finalist (passed the selection)
+- `offer` — Job offer
 
-### JWT и роли
+### JWT and roles
 
-- После `POST /login` используйте выданный `token` в `Authorization`
-- Декораторы `token_required` и `roles_required` проверяют доступ
+- After `POST /login`, use the issued `token` in `Authorization`
+- The `token_required` and `roles_required` decorators check access
 
-### Логи
+### Logs
 
-- Логи запросов/ответов и ошибок настраиваются в `app/logging_config.py`, инициализируются в `app/__init__.py`
+- Request/response and error logging is configured in `app/logging_config.py` and initialized in `app/__init__.py`
 
 ### CORS
 
-- Разрешены все источники (`CORS(app, origins="*")`), необходимые заголовки выставляются автоматически
+- All origins are allowed (`CORS(app, origins="*")`), the necessary headers are set automatically
 
-### Сборка образа бэкенда отдельно
+### Building the backend image separately
 
 ```
 cd backend
@@ -1737,91 +1737,91 @@ docker build -t moretech-backend:latest .
 docker run --env-file ../.env -p 5000:5000 moretech-backend:latest
 ```
 
-### Примечания
+### Notes
 
-- Для работы S3 потребуется корректная конфигурация AWS/Yandex ключей в окружении контейнера/процесса
-- Если S3 не настроен, резюме сохраняются локально в `uploads/resumes`
+- For S3 to work, you need a correct configuration of AWS/Yandex keys in the container/process environment
+- If S3 is not configured, resumes are saved locally in `uploads/resumes`
 
-## Интеграция с HH.ru API
+## HH.ru API integration
 
-### Обзор интеграции
+### Integration overview
 
-Платформа MoreTech.VTB интегрирована с HeadHunter API для обеспечения бесшовной работы с крупнейшей российской платформой поиска работы. Интеграция позволяет автоматизировать процессы импорта данных кандидатов и расширить возможности анализа профилей.
+The MoreTech.VTB platform is integrated with the HeadHunter API to ensure seamless work with the largest Russian job search platform. The integration makes it possible to automate the processes of importing candidate data and to expand profile analysis capabilities.
 
-### Функциональные возможности
+### Functional capabilities
 
-#### Импорт данных кандидатов
+#### Importing candidate data
 
-| Функция | Описание | Технические детали |
+| Feature | Description | Technical details |
 |---------|----------|-------------------|
-| **OAuth авторизация** | Безопасная авторизация через HH.ru | OAuth 2.0, refresh tokens |
-| **Импорт резюме** | Автоматическое получение полного резюме | REST API, JSON структура |
-| **Синхронизация профиля** | Обновление личных данных и контактов | Периодическая синхронизация |
-| **История работы** | Импорт опыта работы и достижений | Структурированные данные |
-| **Образование** | Автоматическое заполнение данных об образовании | Валидация и нормализация |
+| **OAuth authorization** | Secure authorization via HH.ru | OAuth 2.0, refresh tokens |
+| **Resume import** | Automatic retrieval of the full resume | REST API, JSON structure |
+| **Profile synchronization** | Updating personal data and contacts | Periodic synchronization |
+| **Work history** | Importing work experience and achievements | Structured data |
+| **Education** | Automatic filling of education data | Validation and normalization |
 
-#### Преимущества для кандидатов
+#### Benefits for candidates
 
-- **Быстрая регистрация** - вход через HH.ru за 30 секунд
-- **Автозаполнение профиля** - исключение дублирования ввода данных
-- **Синхронизация изменений** - автоматическое обновление информации
-- **Умный матчинг** - ИИ анализ HH-профиля для подбора вакансий
-- **Расширенная аналитика** - дополнительные метрики на основе HH-данных
+- **Fast registration** — log in via HH.ru in 30 seconds
+- **Profile autofill** — eliminates duplicate data entry
+- **Change synchronization** — automatic information updates
+- **Smart matching** — AI analysis of the HH profile to suggest vacancies
+- **Advanced analytics** — additional metrics based on HH data
 
-#### Преимущества для работодателей
+#### Benefits for employers
 
-- **Расширенная база кандидатов** - доступ к миллионам резюме HH.ru
-- **Глубокая аналитика** - анализ активности кандидата на платформе
-- **Быстрый скрининг** - автоматическая предварительная оценка
-- **Статистика отклика** - данные о реакции кандидатов на предложения
-- **Точный таргетинг** - поиск по детальным критериям HH.ru
+- **Expanded candidate base** — access to millions of HH.ru resumes
+- **Deep analytics** — analysis of the candidate's activity on the platform
+- **Fast screening** — automatic preliminary evaluation
+- **Response statistics** — data on candidates' reactions to offers
+- **Precise targeting** — search by detailed HH.ru criteria
 
-### Техническая реализация
+### Technical implementation
 
-#### API эндпоинты
+#### API endpoints
 
 ```http
-# Инициация OAuth авторизации
+# Initiating OAuth authorization
 GET /auth/hh/login
 Response: Redirect to https://hh.ru/oauth/authorize
 
-# Обработка callback от HH.ru
+# Handling the callback from HH.ru
 GET /auth/hh/callback?code=AUTH_CODE
 Response: {"token": "jwt_token", "profile_imported": true}
 
-# Синхронизация данных профиля
+# Synchronizing profile data
 POST /api/hh/sync-profile
 Authorization: Bearer <token>
 Response: {"updated_fields": ["experience", "skills"], "status": "success"}
 ```
 
-#### Структура импортируемых данных
+#### Structure of the imported data
 
 ```json
 {
   "personal_info": {
-    "first_name": "Иван",
-    "last_name": "Петров",
+    "first_name": "Ivan",
+    "last_name": "Petrov",
     "email": "ivan.petrov@email.com",
     "phone": "+7 (999) 123-45-67",
     "birth_date": "1990-05-15",
-    "location": "Москва"
+    "location": "Moscow"
   },
   "experience": [
     {
-      "company": "ООО Технологии",
+      "company": "Tekhnologii LLC",
       "position": "Senior Python Developer",
       "start_date": "2020-03-01",
       "end_date": null,
-      "description": "Разработка ML-моделей и веб-приложений",
+      "description": "Developing ML models and web applications",
       "skills": ["Python", "ML", "Docker"]
     }
   ],
   "education": [
     {
-      "institution": "МГУ",
-      "faculty": "ВМК",
-      "specialization": "Прикладная математика",
+      "institution": "MSU",
+      "faculty": "CMC",
+      "specialization": "Applied Mathematics",
       "year": 2012
     }
   ],
@@ -1838,62 +1838,62 @@ Response: {"updated_fields": ["experience", "skills"], "status": "success"}
 }
 ```
 
-### Процесс интеграции
+### Integration process
 
-#### Для кандидатов
-
-```
-1. Кандидат на HH.ru
-   ↓
-2. OAuth авторизация
-   ↓
-3. Импорт резюме
-   ↓
-4. ИИ-анализ профиля
-   ↓
-5. Персональные рекомендации
-   ↓
-6. Автоматический матчинг
-```
-
-#### Для HR-специалистов
+#### For candidates
 
 ```
-1. HR-специалист
+1. Candidate on HH.ru
    ↓
-2. Поиск кандидатов
+2. OAuth authorization
    ↓
-3. Анализ HH-профилей
+3. Resume import
    ↓
-4. ИИ-скрининг резюме
+4. AI profile analysis
    ↓
-5. Формирование шорт-листа
+5. Personal recommendations
    ↓
-6. Приглашение на ИИ-интервью
+6. Automatic matching
 ```
 
-### Безопасность и приватность
-
-- **OAuth 2.0** - стандартная авторизация без передачи паролей
-- **Шифрование данных** - все персональные данные зашифрованы
-- **Токены с истечением** - автоматическое обновление access tokens
-- **Минимальные разрешения** - запрос только необходимых данных
-- **GDPR-совместимость** - соблюдение требований защиты данных
-
-### Статистика интеграции
+#### For HR specialists
 
 ```
-Метрики использования HH.ru интеграции:
-├── OAuth авторизаций: 2,847
-├── Импортированных резюме: 2,634 (92.5%)
-├── Синхронизаций профилей: 1,892
-├── Среднее время импорта: 3.2 сек
-└── Успешность матчинга: +34% с HH-данными
+1. HR specialist
+   ↓
+2. Candidate search
+   ↓
+3. Analysis of HH profiles
+   ↓
+4. AI resume screening
+   ↓
+5. Forming a short list
+   ↓
+6. Invitation to an AI interview
 ```
 
-### Настройка интеграции
+### Security and privacy
 
-#### Переменные окружения
+- **OAuth 2.0** — standard authorization without transferring passwords
+- **Data encryption** — all personal data is encrypted
+- **Expiring tokens** — automatic refresh of access tokens
+- **Minimal permissions** — requesting only the necessary data
+- **GDPR compliance** — adherence to data protection requirements
+
+### Integration statistics
+
+```
+HH.ru integration usage metrics:
+├── OAuth authorizations: 2,847
+├── Imported resumes: 2,634 (92.5%)
+├── Profile synchronizations: 1,892
+├── Average import time: 3.2 sec
+└── Matching success: +34% with HH data
+```
+
+### Integration setup
+
+#### Environment variables
 
 ```bash
 HH_CLIENT_ID=your_hh_client_id
@@ -1901,7 +1901,7 @@ HH_CLIENT_SECRET=your_hh_client_secret
 HH_REDIRECT_URI=https://your-domain.com/auth/hh/callback
 ```
 
-#### Конфигурация в коде
+#### Configuration in code
 
 ```python
 HH_CONFIG = {
@@ -1913,15 +1913,15 @@ HH_CONFIG = {
 }
 ```
 
-## Система статусов заявок
+## Application status system
 
-Платформа поддерживает полный жизненный цикл заявок с цветовым кодированием:
+The platform supports the full application lifecycle with color coding:
 
-| Статус | Цвет | Описание |
+| Status | Color | Description |
 |--------|------|----------|
-| **Active** | Синий | Активные заявки в процессе рассмотрения |
-| **Completed** | Зеленый | Успешно пройденные ИИ-интервью |
-| **Test Task** | Оранжевый | Отправлено тестовое задание |
-| **Finalist** | Фиолетовый | Кандидат в финальном отборе |
-| **Offer** | Желтый | Получено предложение о работе |
-| **Rejected** | Красный | Отклоненные заявки |
+| **Active** | Blue | Active applications under review |
+| **Completed** | Green | Successfully completed AI interviews |
+| **Test Task** | Orange | A test task has been sent |
+| **Finalist** | Purple | The candidate is in the final selection |
+| **Offer** | Yellow | A job offer has been received |
+| **Rejected** | Red | Rejected applications |
